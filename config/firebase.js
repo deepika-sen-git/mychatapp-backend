@@ -12,7 +12,7 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
 } else {
     serviceAccount = require("./serviceAccountKey.json"); // fallback for local dev
 }
-console.log(serviceAccount.private_key);
+// console.log(serviceAccount.private_key);
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
